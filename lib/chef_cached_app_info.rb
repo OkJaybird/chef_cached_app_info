@@ -1,12 +1,13 @@
 require 'json'
 
 class AppCache
-  def self.at(cookbook_path)
-    AppCache.new(cookbook_path)
+  def self.at(cookbook_path, cache_file = nil)
+    AppCache.new(cookbook_path, cache_file)
   end
 
-  def initialize(cookbook_path)
+  def initialize(cookbook_path, cache_file = nil)
     @cookbook_path = cookbook_path
+    @cache_file = cache_file.nil? ? 'files/default/app_cache/chef_cached_app_info.json' : cache_file
   end
 
   def cache_versions(origin_file)
@@ -24,7 +25,7 @@ class AppCache
   end
 
   def cached_app_info_file
-    info_file = File.join(@cookbook_path, 'cached_app_info.json')
+    info_file = File.join(@cookbook_path, @cache_file)
     IO.write(info_file, '{}') unless File.exist?(info_file)
     info_file
   end
