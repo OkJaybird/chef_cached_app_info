@@ -1,0 +1,1 @@
+# chef_cached_app_info
