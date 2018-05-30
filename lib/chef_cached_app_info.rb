@@ -1,7 +1,7 @@
 require 'json'
 
 class AppCache
-  def self.at(cookbook_path, cache_file = nil)
+  def self.for(cookbook_path, cache_file = nil)
     AppCache.new(cookbook_path, cache_file)
   end
 
