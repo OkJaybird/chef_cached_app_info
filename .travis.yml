@@ -1,0 +1,8 @@
+deploy:
+  provider: rubygems
+  api_key:
+    secure: qsYuO5IV6I93pqTpNHmG2HFZWRfj4zMLV1zr+Cv+fKzq6J9XY3PVYLhIznzw2eimvQbxLtQMsLqTg6JSkGSwNlQ/PjxQcREPjEAZdjO1/0SRs/SREERR0y8QwCmNzMU/JpwGqwhyU/BYeZVDUERdwDR3WW7nyk95zKJVzD7MT2UDTpQo0HcKX1Hx6TU3UjcVg1UHcb3YYQXVY9atU3s4y3RkQA36DPnzJGSBT9Bp0JgdmyDRxQ/eHyCVoOMzcFPstNVsdaoQ5hbYmYX0eHg5Cq86IPoGIVMzg1WI5iP7bXy1HlKeuN56m4xa0b+5E2K0XfrzKMqzuM/38cdznnn4FqHtBoeHZXDTDRrEt159e+QNdiB78tfG6wQKXjej+xU/+W0cj0VEcPNwVY3FLczU7LUqNrNiKmJlevsvNdGNDsQWjSw8KvIC4yvpI37oTZ7+O3BAK2NjrNdpLnGrUmGZygIbaoA6yZcE3NUppBXscjBoelwUJzWlQs2E3+H2WQfQeQJxpbHJekskZSxouJraZT5Ntbq8E98UaBl7COyoLafy+2o+B/4/vf/jHSjKAou6Fh0hH7FPNPiOV3relesiv+KaNSFsfVMLyjBwpvUPtphw0kvHL5zj8OmnsszlWIzooVgUXxqIkP//Ep0/EwEUxZZ+wSQlwey85O/I509VRs8=
+  gem: chef_cached_app_info
+  on:
+    tags: true
+    repo: foxfire206/chef_cached_app_info
